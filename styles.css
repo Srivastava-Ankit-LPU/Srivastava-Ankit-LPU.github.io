@@ -1,0 +1,53 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to right, #ff3e3e, #fcff42, #3dff45, #3dfff7, #423dff, #fc3dff);
+  background-size: 150% 150%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+#converter-container {
+  background: rgba(255, 255, 255, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+select, input, button {
+  margin: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100px;
+}
+
+button {
+  cursor: pointer;
+  background: #45a29e;
+  color: white;
+}
+
+#result-container {
+  font-size: 18px;
+  font-weight: bold;
+  color: #364f6b;
+  margin-top: 20px;
+}
